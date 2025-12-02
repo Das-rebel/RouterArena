@@ -164,7 +164,7 @@ jobs:
 
             // Add optimality scores if available
             if (metrics.optimality) {
-              comment += '\n### Optimality Metrics (Sub_10 Split)\n\n';
+              comment += '\n### Optimality Metrics\n\n';
               comment += '| Metric | Value |\n';
               comment += '|--------|-------|\n';
               comment += `| **Opt.Sel** (Optimal Selection) | ${metrics.optimality.opt_sel.toFixed(4)} |\n`;
