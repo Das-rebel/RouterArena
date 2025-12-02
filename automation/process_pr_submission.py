@@ -431,9 +431,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
         evaluation_logs = ""
         try:
-            evaluation_result = run_command(
-                evaluation_cmd, cwd=REPO_ROOT, capture=True
-            )
+            evaluation_result = run_command(evaluation_cmd, cwd=REPO_ROOT, capture=True)
             evaluation_logs = (evaluation_result.stdout or "") + (
                 evaluation_result.stderr or ""
             )

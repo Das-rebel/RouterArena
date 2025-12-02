@@ -105,7 +105,7 @@ jobs:
           mkdir -p "${{ github.workspace }}/dataset"
           uv run python scripts/process_datasets/prep_datasets.py
 
-      - name: Copy PR prediction file to base workspace
+      - name: Copy PR files to base workspace
         if: ${{ steps.detect.outputs.router != '' }}
         run: |
           set -euo pipefail
@@ -115,6 +115,14 @@ jobs:
           cp "pr/router_inference/predictions/${ROUTER_NAME}.json" \
              "base/router_inference/predictions/${ROUTER_NAME}.json"
           echo "Copied prediction file from PR to base workspace"
+
+          # Copy config file from PR to base workspace (if it exists in PR)
+          if [ -f "pr/router_inference/config/${ROUTER_NAME}.json" ]; then
+            mkdir -p base/router_inference/config
+            cp "pr/router_inference/config/${ROUTER_NAME}.json" \
+               "base/router_inference/config/${ROUTER_NAME}.json"
+            echo "Copied config file from PR to base workspace"
+          fi
 
       - name: Evaluate submission
         if: ${{ steps.detect.outputs.router != '' }}
