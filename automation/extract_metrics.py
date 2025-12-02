@@ -19,10 +19,32 @@ if __name__ == "__main__":
         with open(output_file, "r") as f:
             content = f.read()
 
-        # Find the Metrics JSON block
-        match = re.search(r"Metrics:\s*(\{.*?\})", content, re.DOTALL)
+        # Find the line that starts the Metrics JSON block
+        match = re.search(r"Metrics:\s*\{", content)
         if match:
-            metrics_json = match.group(1)
+            start_idx = match.start()
+            # Find the first '{' after "Metrics:"
+            brace_start = content.find("{", match.end() - 1)
+            if brace_start == -1:
+                raise ValueError("Could not find '{' after 'Metrics:'")
+
+            # Manually parse a balanced-brace JSON object so nested objects work
+            brace_count = 0
+            end_idx = None
+            for idx in range(brace_start, len(content)):
+                ch = content[idx]
+                if ch == "{":
+                    brace_count += 1
+                elif ch == "}":
+                    brace_count -= 1
+                    if brace_count == 0:
+                        end_idx = idx + 1
+                        break
+
+            if end_idx is None:
+                raise ValueError("Unbalanced braces while parsing Metrics JSON block")
+
+            metrics_json = content[brace_start:end_idx]
             metrics = json.loads(metrics_json)
 
             # Write metrics to file

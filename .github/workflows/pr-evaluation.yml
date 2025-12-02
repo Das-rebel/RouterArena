@@ -131,10 +131,6 @@ jobs:
             --router "${{ steps.detect.outputs.router }}" \
             --split "${{ steps.detect.outputs.split }}" \
             --base-ref "$BASE_SHA" > evaluation_output.txt 2>&1
-          # Extract metrics from output
-          if grep -q "Metrics:" evaluation_output.txt; then
-            python3 automation/extract_metrics.py evaluation_output.txt
-          fi
           cat evaluation_output.txt
 
       - name: Post evaluation results as PR comment
