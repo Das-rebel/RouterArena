@@ -150,7 +150,7 @@ jobs:
             if (!fs.existsSync(metricsPath)) {
               throw new Error(`metrics.json not found at ${metricsPath}. Evaluation must produce metrics.json file.`);
             }
-            
+
             const metrics = JSON.parse(fs.readFileSync(metricsPath, 'utf8'));
             comment += '### RouterArena Metrics\n\n';
             comment += '| Metric | Value |\n';
