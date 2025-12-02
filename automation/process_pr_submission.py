@@ -383,13 +383,30 @@ def main(argv: Optional[list[str]] = None) -> int:
         )
         print(f"✔ Created worktree at {worktree_path}")
 
-        sync_dataset_into_worktree(worktree_path)
-
+        # Validate that PR adds/modifies prediction file (using worktree for git diff)
         if not args.allow_existing_prediction:
             ensure_prediction_file_added(worktree_path, base_ref, args.router)
 
+        # Sync dataset to base directory (REPO_ROOT) where evaluation will run
+        sync_dataset_into_worktree(REPO_ROOT)
+
+        # Ensure prediction file exists in base directory (workflow should have copied it)
+        prediction_file = (
+            REPO_ROOT / "router_inference" / "predictions" / f"{args.router}.json"
+        )
+        if not prediction_file.exists():
+            raise FileNotFoundError(
+                textwrap.dedent(
+                    f"""
+                    Prediction file not found at {prediction_file}.
+                    Ensure the workflow copied the prediction file from PR to base/router_inference/predictions/
+                    """
+                ).strip()
+            )
+
+        # Run validation and evaluation from base directory (REPO_ROOT) using trusted scripts
         if not args.skip_sync:
-            run_command(["uv", "sync", "--locked"], cwd=worktree_path, capture=True)
+            run_command(["uv", "sync", "--locked"], cwd=REPO_ROOT, capture=True)
 
         validation_cmd = [
             "uv",
@@ -400,7 +417,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             args.split,
             "--check-generated-result",
         ]
-        validation_result = run_command(validation_cmd, cwd=worktree_path, capture=True)
+        validation_result = run_command(validation_cmd, cwd=REPO_ROOT, capture=True)
 
         evaluation_cmd = [
             "uv",
@@ -415,7 +432,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         evaluation_logs = ""
         try:
             evaluation_result = run_command(
-                evaluation_cmd, cwd=worktree_path, capture=True
+                evaluation_cmd, cwd=REPO_ROOT, capture=True
             )
             evaluation_logs = (evaluation_result.stdout or "") + (
                 evaluation_result.stderr or ""
@@ -424,22 +441,9 @@ def main(argv: Optional[list[str]] = None) -> int:
             evaluation_logs = (error.stdout or "") + (error.stderr or "")
             raise
 
-        prediction_file = (
-            worktree_path / "router_inference" / "predictions" / f"{args.router}.json"
-        )
-        if not prediction_file.exists():
-            raise FileNotFoundError(
-                textwrap.dedent(
-                    f"""
-                    Prediction file not found after evaluation: {prediction_file}
-                    Ensure the pull request contains router_inference/predictions/{args.router}.json
-                    """
-                ).strip()
-            )
-
         # Read metrics from metrics.json (required - no fallback)
-        # llm_evaluation/run.py writes metrics.json to the current working directory (worktree_path)
-        metrics_path = worktree_path / "metrics.json"
+        # llm_evaluation/run.py writes metrics.json to the current working directory (REPO_ROOT)
+        metrics_path = REPO_ROOT / "metrics.json"
         if not metrics_path.exists():
             raise FileNotFoundError(
                 textwrap.dedent(
@@ -455,10 +459,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         with open(metrics_path, "r") as f:
             metrics = json.load(f)
 
-        # Copy metrics.json to base directory (REPO_ROOT) for workflow to read
-        base_metrics_path = REPO_ROOT / "metrics.json"
-        shutil.copy2(metrics_path, base_metrics_path)
-        print(f"✔ Copied metrics.json to {base_metrics_path}")
+        # metrics.json is already in REPO_ROOT (base directory) where workflow can read it
+        print(f"✔ metrics.json available at {metrics_path} for workflow")
 
         # Display optimality scores if available
         if "optimality" in metrics:
