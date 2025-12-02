@@ -437,26 +437,38 @@ def main(argv: Optional[list[str]] = None) -> int:
                 ).strip()
             )
 
-        # Read metrics from metrics.json (includes both arena score and optimality scores)
-        metrics_path = prediction_file.parent / "../../metrics.json"
-        if metrics_path.exists():
-            print("\n✔ Reading metrics from metrics.json...")
-            with open(metrics_path, "r") as f:
-                metrics = json.load(f)
+        # Read metrics from metrics.json (required - no fallback)
+        # llm_evaluation/run.py writes metrics.json to the current working directory (worktree_path)
+        metrics_path = worktree_path / "metrics.json"
+        if not metrics_path.exists():
+            raise FileNotFoundError(
+                textwrap.dedent(
+                    f"""
+                    metrics.json not found at {metrics_path}.
+                    Evaluation must produce metrics.json file.
+                    Ensure llm_evaluation/run.py completed successfully.
+                    """
+                ).strip()
+            )
 
-            # Display optimality scores if available
-            if "optimality" in metrics:
-                opt = metrics["optimality"]
-                print("\n✔ Optimality scores:")
-                print(
-                    f"  Opt.Sel: {opt.get('opt_sel', 0):.4f} ({opt.get('opt_sel', 0) * 100:.2f}%)"
-                )
-                print(f"  Opt.Cost: {opt.get('opt_cost', 0):.4f}")
-                print(f"  Opt.Acc: {opt.get('opt_acc', 0):.4f}")
-        else:
-            # Fallback to compute_scores if metrics.json doesn't exist
-            print("\n  metrics.json not found, computing scores...")
-            metrics = compute_scores(prediction_file)
+        print("\n✔ Reading metrics from metrics.json...")
+        with open(metrics_path, "r") as f:
+            metrics = json.load(f)
+
+        # Copy metrics.json to base directory (REPO_ROOT) for workflow to read
+        base_metrics_path = REPO_ROOT / "metrics.json"
+        shutil.copy2(metrics_path, base_metrics_path)
+        print(f"✔ Copied metrics.json to {base_metrics_path}")
+
+        # Display optimality scores if available
+        if "optimality" in metrics:
+            opt = metrics["optimality"]
+            print("\n✔ Optimality scores:")
+            print(
+                f"  Opt.Sel: {opt.get('opt_sel', 0):.4f} ({opt.get('opt_sel', 0) * 100:.2f}%)"
+            )
+            print(f"  Opt.Cost: {opt.get('opt_cost', 0):.4f}")
+            print(f"  Opt.Acc: {opt.get('opt_acc', 0):.4f}")
 
         # Persist artifacts under pr_evaluations/pr-<num>/run-<timestamp>/
         run_timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
