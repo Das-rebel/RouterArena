@@ -23,31 +23,36 @@ from router_inference.router.base_router import BaseRouter
 MODEL_PROFILES: Dict[str, Dict[str, Any]] = {
     "gpt-4o-mini": {
         "provider": "OpenAI",
-        "cost_per_1k_input": 0.15, "cost_per_1k_output": 0.60,
+        "cost_per_1k_input": 0.15,
+        "cost_per_1k_output": 0.60,
         "quality_score": 0.85,
         "strengths": ["generalist", "reasoning", "analysis"],
     },
     "claude-3-haiku-20240307": {
         "provider": "Anthropic",
-        "cost_per_1k_input": 0.25, "cost_per_1k_output": 1.25,
+        "cost_per_1k_input": 0.25,
+        "cost_per_1k_output": 1.25,
         "quality_score": 0.83,
         "strengths": ["coding", "fast", "analysis"],
     },
     "gemini-2.5-flash": {
         "provider": "Google",
-        "cost_per_1k_input": 0.15, "cost_per_1k_output": 0.60,
+        "cost_per_1k_input": 0.15,
+        "cost_per_1k_output": 0.60,
         "quality_score": 0.87,
         "strengths": ["multilingual", "long-context", "fast"],
     },
     "qwen/qwen3-235b-a22b-2507": {
         "provider": "Alibaba",
-        "cost_per_1k_input": 0.90, "cost_per_1k_output": 0.90,
+        "cost_per_1k_input": 0.90,
+        "cost_per_1k_output": 0.90,
         "quality_score": 0.92,
         "strengths": ["reasoning", "multilingual", "analysis", "premium"],
     },
     "deepseek/deepseek-v4-flash": {
         "provider": "DeepSeek",
-        "cost_per_1k_input": 0.15, "cost_per_1k_output": 0.60,
+        "cost_per_1k_input": 0.15,
+        "cost_per_1k_output": 0.60,
         "quality_score": 0.88,
         "strengths": ["coding", "fast", "budget"],
     },
@@ -58,37 +63,67 @@ MODEL_PROFILES: Dict[str, Dict[str, Any]] = {
 # ============================================================
 
 CODE_PATTERNS = [
-    r'\b(function|def|class|import|const|let|var|async|await|export)\b',
-    r'\b(api|endpoint|rest|graphql|middleware|route)\b',
-    r'\b(sql|database|query|index|migration|schema)\b',
-    r'\b(docker|kubernetes|ci/cd|deploy|pipeline)\b',
-    r'\b(react|vue|angular|next\.js|node\.js|python|django)\b',
-    r'\b(bug|debug|error|exception|crash|traceback)\b',
-    r'\b(algorithm|complexity|optimize|refactor)\b',
-    r'```|def\s+\w+\s*\(|class\s+\w+',
+    r"\b(function|def|class|import|const|let|var|async|await|export)\b",
+    r"\b(api|endpoint|rest|graphql|middleware|route)\b",
+    r"\b(sql|database|query|index|migration|schema)\b",
+    r"\b(docker|kubernetes|ci/cd|deploy|pipeline)\b",
+    r"\b(react|vue|angular|next\.js|node\.js|python|django)\b",
+    r"\b(bug|debug|error|exception|crash|traceback)\b",
+    r"\b(algorithm|complexity|optimize|refactor)\b",
+    r"```|def\s+\w+\s*\(|class\s+\w+",
 ]
 
 MATH_PATTERNS = [
-    r'\b(calculate|compute|equation|formula|solve|proof)\b',
-    r'\b(integral|derivative|matrix|vector|eigen)\b',
-    r'\b(probability|statistic|regression|correlation)\b',
-    r'\d+\s*[\+\-\*\/]\s*\d+',
-    r'\b(theorem|lemma|axiom|conjecture)\b',
+    r"\b(calculate|compute|equation|formula|solve|proof)\b",
+    r"\b(integral|derivative|matrix|vector|eigen)\b",
+    r"\b(probability|statistic|regression|correlation)\b",
+    r"\d+\s*[\+\-\*\/]\s*\d+",
+    r"\b(theorem|lemma|axiom|conjecture)\b",
 ]
 
 CREATIVE_PATTERNS = [
-    r'\b(write|compose|create|design|generate).*(story|poem|song|article|blog)\b',
-    r'\b(brainstorm|idea|creative|innovative)\b',
-    r'\b(narrative|plot|character|dialogue|scene)\b',
+    r"\b(write|compose|create|design|generate).*(story|poem|song|article|blog)\b",
+    r"\b(brainstorm|idea|creative|innovative)\b",
+    r"\b(narrative|plot|character|dialogue|scene)\b",
 ]
 
 PROFESSIONAL_DOMAINS = {
-    "medical": ["clinical", "medical", "pharmaceutical", "diagnosis", "treatment",
-                 "patient", "surgical", "disease", "drug", "therapy"],
-    "legal": ["legal", "law", "contract", "regulation", "compliance", "court",
-              "attorney", "patent", "copyright", "statute"],
-    "finance": ["financial", "valuation", "revenue", "portfolio", "investment",
-                "tax", "accounting", "fiscal", "audit", "monetary"],
+    "medical": [
+        "clinical",
+        "medical",
+        "pharmaceutical",
+        "diagnosis",
+        "treatment",
+        "patient",
+        "surgical",
+        "disease",
+        "drug",
+        "therapy",
+    ],
+    "legal": [
+        "legal",
+        "law",
+        "contract",
+        "regulation",
+        "compliance",
+        "court",
+        "attorney",
+        "patent",
+        "copyright",
+        "statute",
+    ],
+    "finance": [
+        "financial",
+        "valuation",
+        "revenue",
+        "portfolio",
+        "investment",
+        "tax",
+        "accounting",
+        "fiscal",
+        "audit",
+        "monetary",
+    ],
 }
 
 
@@ -99,13 +134,16 @@ def classify_query(prompt: str) -> Dict[str, Any]:
     wc: int = len(words)
 
     code_score: float = min(
-        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CODE_PATTERNS) * 0.15, 1.0
+        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CODE_PATTERNS) * 0.15,
+        1.0,
     )
     math_score: float = min(
         sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in MATH_PATTERNS) * 0.2, 1.0
     )
     creative_score: float = min(
-        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CREATIVE_PATTERNS) * 0.15, 1.0
+        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CREATIVE_PATTERNS)
+        * 0.15,
+        1.0,
     )
 
     # Domain detection
@@ -141,6 +179,7 @@ def classify_query(prompt: str) -> Dict[str, Any]:
 # ============================================================
 # ROUTING ENGINE
 # ============================================================
+
 
 def select_model(query: str, available_models: List[str]) -> str:
     """Select the best model using A3M-style multi-signal routing."""
@@ -210,6 +249,7 @@ def select_model(query: str, available_models: List[str]) -> str:
 # RouterArena BaseRouter interface
 # ============================================================
 
+
 class A3MRouter(BaseRouter):
     """A3M Router adapter for RouterArena evaluation."""
 
@@ -218,4 +258,3 @@ class A3MRouter(BaseRouter):
 
     def _get_prediction(self, query: str) -> str:
         return select_model(query, self.models)
-
