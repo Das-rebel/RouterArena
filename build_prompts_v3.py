@@ -122,8 +122,11 @@ def build_formatted_prompts_from_router_eval_benchmark(split_name: str) -> List[
 
         # Build options string
         if has_options:
-            labels = [chr(65 + i) for i in range(len(options_list))]
-            options_str = "\n".join(f"{label}. {opt}" for label, opt in zip(labels, options_list))
+            letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            options_str = ""
+            for i, opt in enumerate(options_list):
+                letter = letters[i] if i < len(letters) else "-"
+                options_str += f"{letter}. {opt}\n"
         else:
             options_str = ""
             options_list = []
