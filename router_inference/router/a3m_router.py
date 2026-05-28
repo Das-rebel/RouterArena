@@ -9,14 +9,15 @@ Routes queries to optimal models using A3M's multi-signal logic:
 """
 
 import hashlib
-import json
 import re
+from typing import Any, Dict, List
+from router_inference.router.base_router import BaseRouter
 
 # ============================================================
 # MODEL PROFILES
 # ============================================================
 
-MODEL_PROFILES = {
+MODEL_PROFILES: Dict[str, Dict[str, Any]] = {
     "gpt-4o-mini": {
         "provider": "OpenAI",
         "cost_per_1k_input": 0.15, "cost_per_1k_output": 0.60,
@@ -50,7 +51,7 @@ MODEL_PROFILES = {
 }
 
 # ============================================================
-# QUERY CLASSIFICATION (same logic as A3M advancedRouter.js)
+# QUERY CLASSIFICATION
 # ============================================================
 
 CODE_PATTERNS = [
@@ -88,60 +89,70 @@ PROFESSIONAL_DOMAINS = {
 }
 
 
-def classify_query(prompt: str) -> dict:
-    """Extract query features."""
+def classify_query(prompt: str) -> Dict[str, Any]:
+    """Extract query features from prompt text."""
     lower = prompt.lower()
     words = prompt.split()
+    wc: int = len(words)
 
-    features = {
-        "word_count": len(words),
-        "code_score": min(sum(bool(re.search(p, prompt, re.I)) for p in CODE_PATTERNS) * 0.15, 1.0),
-        "math_score": min(sum(bool(re.search(p, prompt, re.I)) for p in MATH_PATTERNS) * 0.2, 1.0),
-        "creative_score": min(sum(bool(re.search(p, prompt, re.I)) for p in CREATIVE_PATTERNS) * 0.15, 1.0),
-        "domain": "general",
-        "is_mcq": "Options:" in prompt and len(words) < 80,
-    }
+    code_score: float = min(
+        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CODE_PATTERNS) * 0.15, 1.0
+    )
+    math_score: float = min(
+        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in MATH_PATTERNS) * 0.2, 1.0
+    )
+    creative_score: float = min(
+        sum(bool(re.search(p, prompt, re.IGNORECASE)) for p in CREATIVE_PATTERNS) * 0.15, 1.0
+    )
 
     # Domain detection
-    for domain, keywords in PROFESSIONAL_DOMAINS.items():
+    domain: str = "general"
+    for dom, keywords in PROFESSIONAL_DOMAINS.items():
         if sum(kw in lower for kw in keywords) >= 2:
-            features["domain"] = domain
+            domain = dom
             break
 
     # Complexity
-    wc = features["word_count"]
     if wc < 30:
-        features["complexity"] = 0.3
+        complexity: float = 0.3
     elif wc > 200:
-        features["complexity"] = 0.9
+        complexity = 0.9
     elif wc > 100:
-        features["complexity"] = 0.7
+        complexity = 0.7
     elif wc > 50:
-        features["complexity"] = 0.5
+        complexity = 0.5
     else:
-        features["complexity"] = 0.4
+        complexity = 0.4
 
-    return features
+    return {
+        "word_count": wc,
+        "code_score": code_score,
+        "math_score": math_score,
+        "creative_score": creative_score,
+        "domain": domain,
+        "complexity": complexity,
+        "is_mcq": "Options:" in prompt and wc < 80,
+    }
 
 
 # ============================================================
 # ROUTING ENGINE
 # ============================================================
 
-def select_model(query: str, available_models: list) -> str:
-    """Select the best model using A3M-style routing."""
+def select_model(query: str, available_models: List[str]) -> str:
+    """Select the best model using A3M-style multi-signal routing."""
     features = classify_query(query)
-    query_hash = int(hashlib.md5(query.encode()).hexdigest()[:8], 16)
+    query_hash: int = int(hashlib.md5(query.encode()).hexdigest()[:8], 16)
 
-    model_scores = {}
+    model_scores: Dict[str, float] = {}
     for model_name in available_models:
         profile = MODEL_PROFILES.get(model_name, {})
         if not profile:
             continue
-        provider = profile.get("provider")
-        quality = profile.get("quality_score", 0.80)
-        cost = profile.get("cost_per_1k_input", 0.0)
-        score = quality * 1.0
+        provider: str = str(profile.get("provider", ""))
+        quality: float = float(profile.get("quality_score", 0.80))
+        cost: float = float(profile.get("cost_per_1k_input", 0.0))
+        score: float = quality
 
         # Task specialization
         if features["code_score"] > 0.1:
@@ -163,13 +174,13 @@ def select_model(query: str, available_models: list) -> str:
             elif provider == "Anthropic":
                 score += 0.3
 
-        # Short MCQ distribution: hash-based even spread across models
+        # Short MCQ: hash-based deterministic distribution
         if features["is_mcq"]:
-            bucket = query_hash % len(available_models)
+            bucket: int = query_hash % len(available_models)
             if available_models[bucket] == model_name:
-                score += 1.5  # moderate boost for assigned slot
+                score += 1.5
             else:
-                score -= 0.5  # slight penalty for non-assigned
+                score -= 0.5
 
         # Complexity
         if features["complexity"] > 0.5:
@@ -181,26 +192,25 @@ def select_model(query: str, available_models: list) -> str:
             if provider == "DeepSeek":
                 score += 0.3
 
-        # Cost efficiency
+        # Cost efficiency bonus
         if cost > 0:
             score += quality / (cost + 0.01) * 0.03
 
         model_scores[model_name] = score + (query_hash % 100) * 0.001
 
-    return max(model_scores, key=model_scores.get) if model_scores else available_models[0]
+    if model_scores:
+        return max(model_scores, key=lambda k: model_scores[k])
+    return available_models[0]
 
 
 # ============================================================
 # RouterArena BaseRouter interface
 # ============================================================
 
-from router_inference.router.base_router import BaseRouter
-
-
 class A3MRouter(BaseRouter):
     """A3M Router adapter for RouterArena evaluation."""
 
-    def __init__(self, router_name: str):
+    def __init__(self, router_name: str) -> None:
         super().__init__(router_name)
 
     def _get_prediction(self, query: str) -> str:
