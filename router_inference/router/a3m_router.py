@@ -1,7 +1,7 @@
+#!/usr/bin/env python3
 # SPDX-FileCopyrightText: Copyright contributors to the RouterArena project
 # SPDX-License-Identifier: Apache-2.0
 
-#!/usr/bin/env python3
 """
 A3M Router adapter for RouterArena evaluation.
 
@@ -218,3 +218,4 @@ class A3MRouter(BaseRouter):
 
     def _get_prediction(self, query: str) -> str:
         return select_model(query, self.models)
+
