@@ -158,6 +158,8 @@ class ModelInference:
             "open-mistral-nemo": "mistral",
             # DeepSeek models
             "deepseek/deepseek-v4-flash": "openrouter",
+            "deepseek-chat": "deepseek",
+            "deepseek-v3.1": "deepseek",
             "deepseek-coder": "deepseek",
             # Together AI models
             "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": "together",
