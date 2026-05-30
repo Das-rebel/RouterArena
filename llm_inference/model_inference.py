@@ -133,7 +133,7 @@ class ModelInference:
             "gpt-4.1-nano": "openai",
             "gpt-4o": "openai",
             "openai/gpt-4o-mini": "openrouter",
-            "gpt-4o-mini": "openai",
+            "gpt-4o-mini": "openrouter",
             "gpt-4-1106-preview": "openai",
             "o4-mini": "openai",
             "gpt-5-chat-latest": "openai",
