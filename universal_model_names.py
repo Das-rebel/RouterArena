@@ -118,6 +118,7 @@ universal_names = [
     "claude-sonnet-4",
     "claude-haiku-4-5-20251001",
     "meta-llama_llama-3.3-70b-instruct",
+    "meta/llama-3.3-70b-instruct",
     "meta-llama_llama-3.1-405b-instruct",
     "llama-3.3-70b-versatile",
     "deepseek-chat",
