@@ -155,6 +155,7 @@ class ModelInference:
             "open-mistral-7b": "mistral",
             "open-mistral-nemo": "mistral",
             # DeepSeek models
+            "deepseek/deepseek-v4-flash": "openrouter",
             "deepseek-coder": "deepseek",
             # Together AI models
             "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": "together",
