@@ -148,6 +148,7 @@ class ModelInference:
             "gemini-2.5-pro": "google",
             # Mistral models
             "mistral-medium": "mistral",
+            "mistralai/ministral-3-14b-2512": "mistral",
             "codestral-latest": "mistral",
             "open-mixtral-8x7b": "mistral",
             "mistral-large-latest": "mistral",
@@ -192,6 +193,9 @@ class ModelInference:
             "llama-3-1-405b-instruct": "aws",
             # Zhipu
             "glm-4-air": "zhipu",
+            "glm-4-air-250414": "zhipu",
+            "glm-4.5-air": "zhipu",
+            "glm-4.6": "zhipu",
             "glm-4-flash": "zhipu",
             "glm-4-plus": "zhipu",
         }
@@ -466,7 +470,15 @@ class ModelInference:
 
         client = Mistral(api_key=self.mistral_api_key)
 
-        clean_model_name = model_name.replace("mistral/", "")
+        clean_model_name = model_name.replace("mistral/", "").replace("mistralai/", "")
+        
+        # RouterArena name → Mistral API name mapping
+        MISTRAL_NAME_MAP = {
+            "ministral-3-14b-2512": "ministral-14b-2512",
+            "ministral-3-3b-2512": "ministral-3b-2512",
+            "ministral-3-8b-2512": "ministral-8b-2512",
+        }
+        clean_model_name = MISTRAL_NAME_MAP.get(clean_model_name, clean_model_name)
 
         from typing import Any, cast
 
