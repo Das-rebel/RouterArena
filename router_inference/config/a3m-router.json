@@ -3,12 +3,10 @@
     "router_name": "a3m-router",
     "router_cls_name": "A3MRouter",
     "models": [
-      "gpt-4o-mini",
-      "claude-3-haiku-20240307",
-      "gemini-2.5-flash",
-      "qwen/qwen3-235b-a22b-2507",
-      "deepseek/deepseek-v4-flash"
+      "openai/gpt-4o-mini",
+      "deepseek/deepseek-v4-flash",
+      "qwen/qwen3-235b-a22b-2507"
     ],
-    "description": "A3M Router - open-source multi-provider LLM router with parallel execution and confidence-scored voting across 47+ providers. 19.5KB CLI, zero ML dependencies."
+    "description": "A3M Router - open-source multi-provider LLM router using OpenRouter for cost-efficient routing"
   }
 }

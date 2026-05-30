@@ -132,6 +132,7 @@ class ModelInference:
             "gpt-4.1-mini": "openai",
             "gpt-4.1-nano": "openai",
             "gpt-4o": "openai",
+            "openai/gpt-4o-mini": "openrouter",
             "gpt-4o-mini": "openai",
             "gpt-4-1106-preview": "openai",
             "o4-mini": "openai",
@@ -298,7 +299,9 @@ class ModelInference:
         )
 
         response = client.chat.completions.create(
-            model=model_name, messages=[{"role": "user", "content": prompt}]
+            model=model_name,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=2048,
         )
 
         usage = getattr(response, "usage", None)

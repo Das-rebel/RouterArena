@@ -3,30 +3,34 @@
 # SPDX-License-Identifier: Apache-2.0
 
 """
-A3M Router adapter for RouterArena evaluation.
-Routes to cheapest reliable model per query difficulty.
-Uses only models proven to work in RouterArena's API pipeline.
+A3M Router for RouterArena evaluation.
+Routes to cheapest reliable model via OpenRouter.
 """
 
 from typing import Any, Dict, List
 from router_inference.router.base_router import BaseRouter
 
-# Models with proven API reliability in RouterArena
+# Priority: cheapest non-reasoning model first
 RELIABLE_MODELS = {
-    "deepseek/deepseek-v4-flash": {
-        "success_rate": 0.54,
+    "openai/gpt-4o-mini": {
         "cost_per_1k": 0.15,
-        "strength": "generalist"
+        "strength": "fast-cheap-generalist"
+    },
+    "deepseek/deepseek-v4-flash": {
+        "cost_per_1k": 0.15,
+        "strength": "coding-reasoning"
     },
     "qwen/qwen3-235b-a22b-2507": {
-        "success_rate": 0.32,
         "cost_per_1k": 0.90,
-        "strength": "reasoning"
+        "strength": "reasoning-premium"
     },
 }
 
+PRIMARY = "openai/gpt-4o-mini"
+FALLBACKS = ["deepseek/deepseek-v4-flash", "qwen/qwen3-235b-a22b-2507"]
+
 class A3MRouter(BaseRouter):
-    """Routes to cheapest working model, falls back to most reliable."""
+    """Routes to cheapest working model, falls back to alternatives."""
     
     def __init__(self, router_name: str) -> None:
         super().__init__(router_name)
@@ -36,8 +40,13 @@ class A3MRouter(BaseRouter):
         available = [m for m in self.models if m in RELIABLE_MODELS]
         
         if not available:
-            # If none of our preferred models are available, use first from config
-            return self.models[0] if self.models else "deepseek/deepseek-v4-flash"
+            return PRIMARY
         
-        # Default: cheapest working model
-        return "deepseek/deepseek-v4-flash" if "deepseek/deepseek-v4-flash" in available else available[0]
+        if PRIMARY in available:
+            return PRIMARY
+        
+        for fb in FALLBACKS:
+            if fb in available:
+                return fb
+        
+        return available[0]
