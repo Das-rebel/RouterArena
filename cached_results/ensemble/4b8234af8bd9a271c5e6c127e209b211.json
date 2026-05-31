@@ -1,0 +1,1 @@
+{"success": true, "answer": "The postings list should be sorted by DocID to efficiently retrieve documents containing a specific term. This allows for quick lookup and retrieval of relevant documents in an inverted index. The correct answer is \\boxed{B}.", "tokens_in": 118, "tokens_out": 43, "model": "meta/llama-3.3-70b-instruct"}

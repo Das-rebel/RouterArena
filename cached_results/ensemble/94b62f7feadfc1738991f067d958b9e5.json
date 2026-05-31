@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is \\boxed{B}.  \n\nIn information retrieval, a postings list for a term is typically sorted by document ID (DocID) to enable efficient merging during query processing. Sorting by DocID allows for faster intersection and union operations between multiple postings lists.", "tokens_in": 94, "tokens_out": 56, "model": "deepseek-chat"}
