@@ -1,1 +1,1 @@
-{"pipeline_params":{"router_name":"a3m-router","router_cls_name":"A3MRouter","models":["deepseek-chat"],"description":"A3M Router (DeepSeek)"}}
+{"pipeline_params":{"router_name":"a3m-router","router_cls_name":"A3MRouter","models":["deepseek-chat","meta/llama-3.3-70b-instruct"],"description":"A3M Router (DeepSeek 60% + NVIDIA 40%)"}}
