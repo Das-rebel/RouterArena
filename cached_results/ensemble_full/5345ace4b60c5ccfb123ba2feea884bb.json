@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find out how many people didn't wear costumes, subtract the number of people who dressed up from the total number of attendees:\n\n\\[\n13 - 6 = \\boxed{7}\n\\]\n\nSo, **7** people didn't wear costumes.", "tokens": {"prompt_tokens": 97, "total_tokens": 150, "completion_tokens": 53, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The total number of fish caught is the sum of catfish, sturgeons, pikes, and eels: 15 + 20 + 25 + 10 = 70.\n\n\\boxed{70}", "tokens": {"prompt_tokens": 135, "completion_tokens": 44, "total_tokens": 179, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 7}}

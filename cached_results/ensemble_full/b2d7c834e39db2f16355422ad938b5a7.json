@@ -1,0 +1,1 @@
+{"success": true, "answer": "The height difference is found by subtracting the smaller height from the larger height: 452 m \u2212 443 m = 9 m.  \n\n\\boxed{9}", "tokens": {"prompt_tokens": 111, "completion_tokens": 34, "total_tokens": 145, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 111}}

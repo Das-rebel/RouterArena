@@ -1,0 +1,1 @@
+{"success": true, "answer": "First, find the number of windows left: \\(14 - 5 = 9\\) windows.  \nThen multiply by the time per window: \\(9 \\times 4 = 36\\) hours.  \n\n\\boxed{36}", "tokens": {"prompt_tokens": 107, "completion_tokens": 48, "total_tokens": 155, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 107}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The context states: \"Each legislator shall be at least twenty-one years of age.\" This directly answers the question.\n\nFinal judgment: `1`\n\n\\boxed{1}", "tokens": {"prompt_tokens": 122, "completion_tokens": 36, "total_tokens": 158, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 122}}

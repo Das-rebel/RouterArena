@@ -1,0 +1,1 @@
+{"success": true, "answer": "The rank-size rule states that the population of a city is inversely proportional to its rank. If the largest city has 18 million people, the third largest city would have **18 million / 3 = 6 million** people.\n\n\\boxed{C}", "tokens": {"prompt_tokens": 132, "total_tokens": 187, "completion_tokens": 55, "prompt_tokens_details": {"cached_tokens": 0}}}

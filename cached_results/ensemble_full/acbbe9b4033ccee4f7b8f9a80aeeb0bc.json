@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{A}\n\nAcidic mine drainage typically has a pH **below 5.6**, making **pH 5.1** the most likely indicator of acidity among the options. The other values (6.8, 7.3, 8.0, 8.2) represent neutral to alkaline conditions.", "tokens": {"prompt_tokens": 123, "total_tokens": 195, "completion_tokens": 72, "prompt_tokens_details": {"cached_tokens": 0}}}

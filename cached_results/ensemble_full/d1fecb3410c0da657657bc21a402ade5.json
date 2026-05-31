@@ -1,0 +1,1 @@
+{"success": true, "answer": "The radius of a circle is half its diameter. Since the mold's diameter is 4 inches, the radius is \\(4 \\div 2 = 2\\) inches.  \n\n\\boxed{2}", "tokens": {"prompt_tokens": 105, "completion_tokens": 42, "total_tokens": 147, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 105}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The residual is defined as the difference between the actual value and the fitted value from the regression model. This matches option A.  \n\n\\boxed{A}", "tokens": {"prompt_tokens": 251, "completion_tokens": 31, "total_tokens": 282, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 123}}

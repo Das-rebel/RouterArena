@@ -1,0 +1,1 @@
+{"success": true, "answer": "There were originally 9 kinds of sandwiches, and 5 were sold out.  \nSo the number still available is \\(9 - 5 = 4\\).  \n\n\\boxed{4}", "tokens": {"prompt_tokens": 98, "completion_tokens": 39, "total_tokens": 137, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 98}}

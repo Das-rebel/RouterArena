@@ -1,0 +1,1 @@
+{"success": true, "answer": "The chess club originally has 3 members. After enrolling 4 new members, the total is \\(3 + 4 = 7\\).  \n\n\\boxed{7}", "tokens": {"prompt_tokens": 94, "completion_tokens": 35, "total_tokens": 129, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 94}}

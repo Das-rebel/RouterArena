@@ -1,0 +1,1 @@
+{"success": true, "answer": "Chuck's team scored **83 points** and won by **18 points**, meaning the Black Team's score is **18 points less**.\n\nSubtracting 18 from 83 gives:\n\\[\n83 - 18 = 65\n\\]\n\nThe Black Team's final score is \\(\\boxed{65}\\).", "tokens": {"prompt_tokens": 129, "total_tokens": 201, "completion_tokens": 72, "prompt_tokens_details": {"cached_tokens": 0}}}

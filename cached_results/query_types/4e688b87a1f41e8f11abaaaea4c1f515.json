@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nIn inverted indexes (commonly used for postings lists), documents are typically assigned a unique **DocID** to identify their positions. Sorting by **DocID** ensures consistent and efficient retrieval of documents in a predictable order. This is more practical than sorting by term frequency, document frequency, or term identifiers."}

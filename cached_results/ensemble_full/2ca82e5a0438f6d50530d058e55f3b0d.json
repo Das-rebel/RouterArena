@@ -1,0 +1,1 @@
+{"success": true, "answer": "To determine how many years Mrs. Randall has been teaching, add the years she taught third grade and second grade:\n\n\\[\n18 \\text{ years (third grade)} + 8 \\text{ years (second grade)} = \\boxed{26}\n\\]", "tokens": {"prompt_tokens": 111, "total_tokens": 167, "completion_tokens": 56, "prompt_tokens_details": {"cached_tokens": 0}}}

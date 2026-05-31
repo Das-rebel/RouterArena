@@ -1,0 +1,1 @@
+{"success": true, "answer": "Harry's wand is 34 cm, and Hermione's is 3 cm shorter, so it is 34 - 3 = 31 cm. Since 34 cm is greater than 31 cm, Harry has the longer wand.  \n\n\\boxed{Harry}", "tokens": {"prompt_tokens": 97, "completion_tokens": 54, "total_tokens": 151, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 97}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "Ned's result: 28 + 12 + 7 = 47.  \nBilly's result: 28 + 12 \u2212 7 = 33.  \nThe difference is 47 \u2212 33 = 14.\n\n\\boxed{14}", "tokens": {"prompt_tokens": 123, "completion_tokens": 53, "total_tokens": 176, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 123}}

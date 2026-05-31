@@ -1,0 +1,1 @@
+{"success": true, "answer": "The \"Provided Answer\" is missing from your message. Please include the answer you want me to evaluate.", "tokens": {"prompt_tokens": 609, "completion_tokens": 21, "total_tokens": 630, "prompt_tokens_details": {"cached_tokens": 512}, "prompt_cache_hit_tokens": 512, "prompt_cache_miss_tokens": 97}}

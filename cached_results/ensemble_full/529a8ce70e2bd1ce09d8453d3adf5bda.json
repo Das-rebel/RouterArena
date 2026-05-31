@@ -1,0 +1,1 @@
+{"success": true, "answer": "The number of muffins with nuts is 19, and the number without nuts is 31. The ratio is therefore 19 to 31, written as 19:31.  \n\n\\boxed{19:31}", "tokens": {"prompt_tokens": 105, "completion_tokens": 45, "total_tokens": 150, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 105}}

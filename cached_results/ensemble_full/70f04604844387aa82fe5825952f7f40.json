@@ -1,0 +1,1 @@
+{"success": true, "answer": "1\n\n\\boxed{1}", "tokens": {"prompt_tokens": 289, "completion_tokens": 8, "total_tokens": 297, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 33}}

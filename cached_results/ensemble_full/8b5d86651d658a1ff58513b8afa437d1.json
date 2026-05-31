@@ -1,0 +1,1 @@
+{"success": true, "answer": "Harry's wand is **34 cm** long, and Hermione's wand is **3 cm shorter**, so her wand is **34 cm - 3 cm = 31 cm** long.\n\nSince **34 cm > 31 cm**, Harry has the longer magic wand.\n\n\\boxed{{Harry}}", "tokens": {"prompt_tokens": 101, "total_tokens": 168, "completion_tokens": 67, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The nursing home received 472 boxes of vitamins and 288 boxes of supplements. Adding these together gives 472 + 288 = 760 boxes of medicine.  \n\n\\boxed{760}", "tokens": {"prompt_tokens": 108, "completion_tokens": 39, "total_tokens": 147, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 108}}

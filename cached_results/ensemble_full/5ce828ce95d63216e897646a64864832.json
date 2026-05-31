@@ -1,0 +1,1 @@
+{"success": true, "answer": "Initially, there were **9** kinds of sandwiches. Since **5** of them are sold out, subtract the sold-out sandwiches from the total:\n\n\\[\n9 - 5 = 4\n\\]\n\nSo, they now provide **4** kinds of sandwiches.\n\n\\boxed{4}", "tokens": {"prompt_tokens": 102, "total_tokens": 165, "completion_tokens": 63, "prompt_tokens_details": {"cached_tokens": 0}}}

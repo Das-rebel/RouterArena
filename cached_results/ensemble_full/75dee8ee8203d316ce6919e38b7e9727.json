@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find the difference between the number of peaches Audrey and Paul have, subtract Audrey's peaches from Paul's:\n\n\\[\n48 - 26 = 22\n\\]\n\nSo, the difference is \\(\\boxed{22}\\).", "tokens": {"prompt_tokens": 103, "total_tokens": 154, "completion_tokens": 51, "prompt_tokens_details": {"cached_tokens": 0}}}

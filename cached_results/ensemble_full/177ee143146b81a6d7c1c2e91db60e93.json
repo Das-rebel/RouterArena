@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find the total number of people living in Milburg, add the number of grown-ups and children together:\n\n\\[\n5,256 + 2,987 = 8,243\n\\]\n\nThus, the total population of Milburg is \\(\\boxed{8243}\\).", "tokens": {"prompt_tokens": 100, "total_tokens": 164, "completion_tokens": 64, "prompt_tokens_details": {"cached_tokens": 0}}}

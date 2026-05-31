@@ -1,0 +1,1 @@
+{"success": true, "answer": "F. China", "tokens": {"prompt_tokens": 285, "completion_tokens": 3, "total_tokens": 288, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 29}}

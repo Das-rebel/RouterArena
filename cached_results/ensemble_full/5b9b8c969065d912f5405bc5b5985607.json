@@ -1,0 +1,1 @@
+{"success": true, "answer": "The total number of pets is the sum of the dogs, fish, and cats.  \n43 + 72 = 115, and 115 + 34 = 149.  \nThus, there are 149 pets at the farm.\n\n\\boxed{149}", "tokens": {"prompt_tokens": 95, "completion_tokens": 54, "total_tokens": 149, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 95}}

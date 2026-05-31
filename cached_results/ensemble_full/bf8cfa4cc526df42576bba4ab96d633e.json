@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find the Green Team's final score, subtract the 29-point lead from their opponent's score:\n\n\\[\n\\text{Green Team's score} = 68 - 29 = \\boxed{39}\n\\]", "tokens": {"prompt_tokens": 103, "total_tokens": 152, "completion_tokens": 49, "prompt_tokens_details": {"cached_tokens": 0}}}

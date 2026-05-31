@@ -1,0 +1,1 @@
+{"success": true, "answer": "Each tile covers 1 ft\u00b2, so 200 tiles are needed. Each tile costs $12, so the total cost is \\(200 \\times 12 = 2400\\) dollars.  \n\n\\boxed{2400}", "tokens": {"prompt_tokens": 121, "completion_tokens": 47, "total_tokens": 168, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 121}}

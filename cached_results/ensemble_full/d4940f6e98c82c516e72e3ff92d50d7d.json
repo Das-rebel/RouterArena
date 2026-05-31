@@ -1,0 +1,1 @@
+{"success": true, "answer": "There are 2 girls and 9 boys dressed as ghosts. Adding them gives 2 + 9 = 11 people total.  \n\n\\boxed{11}", "tokens": {"prompt_tokens": 92, "completion_tokens": 34, "total_tokens": 126, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 92}}

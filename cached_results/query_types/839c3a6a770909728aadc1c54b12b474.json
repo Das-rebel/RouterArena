@@ -1,0 +1,1 @@
+{"success": true, "answer": "Here's the Python function that simulates the faulty keyboard behavior:\n\n```python\ndef keyboard_reverse(s):\n    result = []\n    for char in s:\n        if char == 'i':\n            result = result[::-1]\n        else:\n            result.append(char)\n    return ''.join(result)\n```"}

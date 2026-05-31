@@ -1,0 +1,1 @@
+{"success": true, "answer": "The **Provided Answer** is **correct** because the paragraph states that when Poe went to Boston, he **published a volume of poetry**.\n\n**Output:** 1\n\n\\boxed{1}", "tokens": {"prompt_tokens": 402, "total_tokens": 444, "completion_tokens": 42, "prompt_tokens_details": {"cached_tokens": 0}}}

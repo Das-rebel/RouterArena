@@ -1,0 +1,1 @@
+{"success": true, "answer": "The CN Tower is 553 m tall and is 369 m taller than the Space Needle.  \nSo, the Space Needle's height is \\( 553 - 369 = 184 \\) meters.  \n\n\\boxed{184}", "tokens": {"prompt_tokens": 113, "completion_tokens": 49, "total_tokens": 162, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 113}}

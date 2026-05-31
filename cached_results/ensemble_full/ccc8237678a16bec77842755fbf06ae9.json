@@ -1,0 +1,1 @@
+{"success": true, "answer": "The number of pizzas without pepperoni is 2, and the number with pepperoni is 13. The ratio of without to with is therefore 2 to 13.  \n\n\\boxed{\\frac{2}{13}}", "tokens": {"prompt_tokens": 112, "completion_tokens": 47, "total_tokens": 159, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 112}}

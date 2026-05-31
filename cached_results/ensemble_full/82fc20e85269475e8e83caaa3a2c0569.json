@@ -1,0 +1,1 @@
+{"success": true, "answer": "To express \\(\\frac{9}{2}\\) as a decimal, divide 9 by 2, which equals 4.5. Therefore, the decimal form is 4.5.\n\n\\boxed{4.5}", "tokens": {"prompt_tokens": 84, "completion_tokens": 46, "total_tokens": 130, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 84}}

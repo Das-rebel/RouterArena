@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find the Black Team's final score, subtract the 18-point margin by which Chuck's team won from their 83 points.\n\nThe calculation is:\n\\[ 83 - 18 = 65 \\]\n\nThus, the Black Team's final score is \\(\\boxed{65}\\).", "tokens": {"prompt_tokens": 129, "total_tokens": 192, "completion_tokens": 63, "prompt_tokens_details": {"cached_tokens": 0}}}

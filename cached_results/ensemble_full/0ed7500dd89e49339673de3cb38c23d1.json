@@ -1,0 +1,1 @@
+{"success": true, "answer": "They hired 318 beavers and 544 spiders, so the total number of workers is \\(318 + 544 = 862\\).\n\n\\boxed{862}", "tokens": {"prompt_tokens": 150, "completion_tokens": 33, "total_tokens": 183, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 22}}
