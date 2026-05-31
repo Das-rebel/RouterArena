@@ -1,0 +1,1 @@
+{"success": true, "answer": "Fast retransmit is triggered when the sender receives three duplicate ACKs for the same segment, indicating a likely loss without waiting for the retransmission timer to expire.  \n\n\\boxed{A}", "tokens_in": 123, "tokens_out": 118, "model": "nvidia/nemotron-3-super-120b-a12b:free"}

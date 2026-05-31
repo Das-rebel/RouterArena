@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is \\boxed{B}. The Maximum Transmission Unit (MTU) is the largest link-layer frame that can be sent by the local sending host. This value is used to determine the Maximum Segment Size (MSS) to ensure that the data will fit into a single link-layer frame.", "tokens_in": 155, "tokens_out": 62, "model": "meta/llama-3.3-70b-instruct"}

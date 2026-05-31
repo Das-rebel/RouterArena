@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is B. MTU.  \n\nThe question describes determining the largest link-layer frame size, which is the Maximum Transmission Unit (MTU). The MSS is then set based on the MTU to ensure TCP segments fit within a single link-layer frame.  \n\n\\boxed{B}", "tokens_in": 130, "tokens_out": 59, "model": "deepseek-chat"}
