@@ -54,6 +54,8 @@ universal_names = [
     "deepseek-coder",
     "deepseek/deepseek-v4-flash",
     "deepseek-v3.1",
+    "openai_gpt-oss-120b",
+    "openai/gpt-oss-120b",
     "deepseek-v3.2",
     # Together AI models
     "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
@@ -81,6 +83,9 @@ universal_names = [
     "llama-3-1-405b-instruct",
     # Zhipu
     "glm-4-air",
+    "glm-4-air-250414",
+    "glm-4.5-air",
+    "glm-4.6",
     "glm-4-flash",
     "glm-4-plus",
     # meta models
@@ -114,6 +119,10 @@ universal_names = [
     # OrcaRouter pool additions
     "claude-sonnet-4",
     "claude-haiku-4-5-20251001",
+    "meta-llama_llama-3.3-70b-instruct",
+    "meta/llama-3.3-70b-instruct",
+    "meta-llama_llama-3.1-405b-instruct",
+    "llama-3.3-70b-versatile",
     "deepseek-chat",
     "deepseek-reasoner",
     "gemini-2.5-flash-lite",
