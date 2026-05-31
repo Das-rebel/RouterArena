@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from router_inference.router.base_router import BaseRouter
+from typing import Optional
 
 class A3MRouter(BaseRouter):
     ROUTING = {
@@ -30,7 +31,7 @@ class A3MRouter(BaseRouter):
     }
     MODELS = list(set(ROUTING.values()))
     
-    def _get_prediction(self, query: str, global_index: str = None) -> str:
+    def _get_prediction(self, query: str, global_index: Optional[str] = None) -> str:
         if global_index:
             for pattern, model in sorted(self.ROUTING.items(), key=lambda x: -len(x[0])):
                 if global_index.startswith(pattern):
