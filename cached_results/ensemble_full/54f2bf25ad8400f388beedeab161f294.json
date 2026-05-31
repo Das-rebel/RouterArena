@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is \\(\\boxed{A}\\).\n\nThe divergence theorem simplifies the integral to the flux of \\(\\mathbf{A}\\) over the sphere's surface, yielding \\(4\\pi k a^{n+2}\\) when evaluated. This matches option A.", "tokens": {"prompt_tokens": 207, "total_tokens": 257, "completion_tokens": 50, "prompt_tokens_details": {"cached_tokens": 0}}}

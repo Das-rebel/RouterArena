@@ -1,0 +1,1 @@
+{"success": true, "answer": "The equation simplifies to \\(4 \\times 2^{2n} = 4^{20}\\), which further reduces to \\(2^{2n + 2} = 2^{40}\\). Equating the exponents gives \\(2n + 2 = 40\\), so \\(n = 19\\).\n\n\\boxed{C}", "tokens": {"prompt_tokens": 131, "total_tokens": 204, "completion_tokens": 73, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{D}\n\nBetween 260 and 280, the prime numbers are **263** and **269**, totaling **four** primes (including **271** and **277**). Thus, the correct answer is **D**.", "tokens": {"prompt_tokens": 99, "total_tokens": 159, "completion_tokens": 60, "prompt_tokens_details": {"cached_tokens": 0}}}

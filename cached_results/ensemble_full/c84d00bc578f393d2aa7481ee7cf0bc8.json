@@ -1,0 +1,1 @@
+{"success": true, "answer": "The factorial of 5 is calculated as 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120.  \nThus, the correct answer is option C.  \n\n\\boxed{C}", "tokens": {"prompt_tokens": 95, "completion_tokens": 42, "total_tokens": 137, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 95}}

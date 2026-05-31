@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is **\\boxed{I}**.\n\nAny non-zero number raised to the power of 0 is 1, so \\(2x^0 = 1\\) and \\((2x)^0 = 1\\). Thus, the quotient simplifies to \\(1/1 = 1\\).", "tokens": {"prompt_tokens": 139, "total_tokens": 201, "completion_tokens": 62, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is **\\boxed{H}**.\n\nA standard deck has 52 unique cards, and there is only one ace of diamonds, so the probability is 1 out of 52. This matches option H.", "tokens": {"prompt_tokens": 174, "total_tokens": 222, "completion_tokens": 48, "prompt_tokens_details": {"cached_tokens": 0}}}

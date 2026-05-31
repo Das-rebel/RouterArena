@@ -1,0 +1,1 @@
+{"success": true, "answer": "The question refers to the **drag force** on a body in fluid dynamics, which can be derived using a modified Biot\u2013Savart-like law in Prandtl\u2019s boundary-layer theory.\n\n\\boxed{\\text{Drag force}}", "tokens": {"prompt_tokens": 102, "total_tokens": 152, "completion_tokens": 50, "prompt_tokens_details": {"cached_tokens": 0}}}

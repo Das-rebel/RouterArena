@@ -1,0 +1,1 @@
+{"success": true, "answer": "The prime numbers between 260 and 280 are 263, 269, 271, and 277. That makes four primes in total.  \n\n\\boxed{E}", "tokens": {"prompt_tokens": 94, "completion_tokens": 36, "total_tokens": 130, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 94}}

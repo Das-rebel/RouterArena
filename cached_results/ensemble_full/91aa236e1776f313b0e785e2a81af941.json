@@ -1,0 +1,1 @@
+{"success": true, "answer": "The beat frequency is calculated as the absolute difference between the two sound frequencies: \\(|504\\,\\text{Hz} - 500\\,\\text{Hz}| = 4\\,\\text{Hz}\\).\n\n\\boxed{F}", "tokens": {"prompt_tokens": 176, "total_tokens": 224, "completion_tokens": 48, "prompt_tokens_details": {"cached_tokens": 0}}}

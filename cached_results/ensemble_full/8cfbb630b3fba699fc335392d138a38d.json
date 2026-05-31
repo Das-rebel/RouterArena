@@ -1,0 +1,1 @@
+{"success": true, "answer": "The Laplace transform of \\( t^n \\) for a positive integer \\( n \\) is given by \\( \\frac{n!}{s^{n+1}} \\).  \nThis matches option B.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 190, "completion_tokens": 44, "total_tokens": 234, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 62}}

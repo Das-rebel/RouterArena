@@ -1,0 +1,1 @@
+{"success": true, "answer": "The probability of heads on a flip is 1/2, and tails is also 1/2. For the specific sequence HHH TT, the probability is (1/2)^5 = 1/32.  \n\n\\boxed{E}", "tokens": {"prompt_tokens": 160, "completion_tokens": 51, "total_tokens": 211, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 32}}

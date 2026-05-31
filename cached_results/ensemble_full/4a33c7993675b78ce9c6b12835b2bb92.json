@@ -1,0 +1,1 @@
+{"success": true, "answer": "The sum telescopes to \\(\\cos(1) - \\lim_{n \\to \\infty} \\cos\\left(\\frac{1}{n^2}\\right) = \\cos(1) - 1 \\approx -0.459\\).\n\n**Correct answer:** \\(\\boxed{J}\\)", "tokens": {"prompt_tokens": 187, "total_tokens": 249, "completion_tokens": 62, "prompt_tokens_details": {"cached_tokens": 0}}}

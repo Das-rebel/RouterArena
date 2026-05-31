@@ -1,0 +1,1 @@
+{"success": true, "answer": "The order of group \\( Z_{18} \\) (the cyclic group of order 18) is **18**, as it consists of all integer multiples of the generator modulo 18.\n\n\\boxed{G}", "tokens": {"prompt_tokens": 133, "total_tokens": 181, "completion_tokens": 48, "prompt_tokens_details": {"cached_tokens": 0}}}

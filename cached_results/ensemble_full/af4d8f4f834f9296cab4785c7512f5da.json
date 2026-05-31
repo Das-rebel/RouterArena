@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nThe total volume of the three cubes is \\(6^3 + 8^3 + 10^3 = 216 + 512 + 1000 = 1728\\) cm\u00b3. The edge of the new cube is the cube root of 1728, which is **12 cm**. Thus, option **b)** is correct.", "tokens": {"prompt_tokens": 149, "total_tokens": 237, "completion_tokens": 88, "prompt_tokens_details": {"cached_tokens": 0}}}

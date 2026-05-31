@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{C}\n\nThe binary number system uses **two** digits: **0** and **1**. This is why it is called \"base-2.\" The other options (0, 1, or 10) are incorrect because they don't represent the fundamental digits of binary.", "tokens": {"prompt_tokens": 93, "total_tokens": 154, "completion_tokens": 61, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nThe prime number after 19 is **23**, as it is only divisible by 1 and itself. Options A (21), C (25), and D (27) are all composite numbers.", "tokens": {"prompt_tokens": 97, "total_tokens": 148, "completion_tokens": 51, "prompt_tokens_details": {"cached_tokens": 0}}}

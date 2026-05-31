@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct Laplace transform of \\( f(t) = t^2 \\) is \\( \\frac{2}{s^3} \\).\n\n\\boxed{E}", "tokens": {"prompt_tokens": 168, "total_tokens": 202, "completion_tokens": 34, "prompt_tokens_details": {"cached_tokens": 0}}}

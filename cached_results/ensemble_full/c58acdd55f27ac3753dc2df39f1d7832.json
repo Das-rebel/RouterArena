@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{D}\n\nA standard deck has 2 red kings (one from hearts and one from diamonds) out of 52 total cards, so the probability is **2/52 = 1/26**.", "tokens": {"prompt_tokens": 134, "total_tokens": 181, "completion_tokens": 47, "prompt_tokens_details": {"cached_tokens": 0}}}

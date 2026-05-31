@@ -1,0 +1,1 @@
+{"success": true, "answer": "We first subtract 10456 from 54671, which gives 44215. Then subtract 33466 from 44215, resulting in 10749. The correct answer is option C.\n\n\\boxed{C}", "tokens": {"prompt_tokens": 105, "completion_tokens": 45, "total_tokens": 150, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 105}}

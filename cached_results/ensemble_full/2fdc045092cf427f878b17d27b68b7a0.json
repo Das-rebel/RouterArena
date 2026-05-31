@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{C}\n\nA standard die has six faces, each with an equal probability of landing face up. Only one of these faces shows a \"six,\" so the probability is **1 out of 6**. The correct choice is **C (1/6)**.", "tokens": {"prompt_tokens": 142, "total_tokens": 198, "completion_tokens": 56, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "To solve the quadratic equation \\( x^2 - 7x + 10 = 0 \\), we can factor it as \\((x - 2)(x - 5) = 0\\), giving the solutions \\( x = 2 \\) and \\( x = 5 \\).\n\nThe correct letter choice is \\(\\boxed{H}\\).", "tokens": {"prompt_tokens": 152, "total_tokens": 223, "completion_tokens": 71, "prompt_tokens_details": {"cached_tokens": 0}}}

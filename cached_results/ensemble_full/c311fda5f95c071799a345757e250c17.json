@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is D, because 5 + 5 equals 10. The other options do not match the sum. \\boxed{D}", "tokens": {"prompt_tokens": 93, "completion_tokens": 30, "total_tokens": 123, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 93}}

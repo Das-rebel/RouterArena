@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is **\\boxed{C}**.\n\nThe odd squares between 10 and 1,000 are the squares of odd integers from 5 to 31 (since \\(31^2 = 961\\) and \\(33^2 = 1089 > 1000\\)). This gives **14** odd squares in total.", "tokens": {"prompt_tokens": 130, "total_tokens": 212, "completion_tokens": 82, "prompt_tokens_details": {"cached_tokens": 0}}}

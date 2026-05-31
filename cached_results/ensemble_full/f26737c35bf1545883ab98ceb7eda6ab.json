@@ -1,0 +1,1 @@
+{"success": true, "answer": "Multiplying by \\(i\\) in the complex plane corresponds to a 90-degree counterclockwise rotation. Therefore, the correct answer is 90 degrees.  \n\n\\boxed{A}", "tokens": {"prompt_tokens": 103, "completion_tokens": 37, "total_tokens": 140, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 103}}

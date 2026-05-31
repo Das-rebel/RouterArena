@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{D}\n\nIn the decimal number system, **MSD** stands for **Most Significant Digit**, which is the first digit from left to right in a number. This digit holds the highest positional value.", "tokens": {"prompt_tokens": 145, "total_tokens": 190, "completion_tokens": 45, "prompt_tokens_details": {"cached_tokens": 0}}}

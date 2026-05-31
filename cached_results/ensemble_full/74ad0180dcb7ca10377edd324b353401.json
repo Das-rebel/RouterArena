@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nThe month has 10 days starting with Sunday, so there are 5 Sundays (1st, 8th) and 5 other days. The total visitors = (5 \u00d7 510) + (5 \u00d7 240) = 2550 + 1200 = 3750. The average = 3750 \u00f7 10 = **285**.", "tokens": {"prompt_tokens": 140, "total_tokens": 236, "completion_tokens": 96, "prompt_tokens_details": {"cached_tokens": 0}}}

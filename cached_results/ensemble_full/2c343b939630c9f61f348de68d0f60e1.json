@@ -1,0 +1,1 @@
+{"success": true, "answer": "There are 4 queens in a standard 52-card deck, so the probability is 4/52, which simplifies to 1/13.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 112, "completion_tokens": 36, "total_tokens": 148, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 112}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "We simplify the numerator: \\(2x^0 = 2 \\cdot 1 = 2\\).  \nThe denominator: \\((2x)^0 = 1\\).  \nThus the quotient is \\(2 / 1 = 2\\).\n\n\\boxed{G}", "tokens": {"prompt_tokens": 136, "completion_tokens": 53, "total_tokens": 189, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 8}}

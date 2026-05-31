@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}  \n\nThe correct equation is \\( E = mc^2 \\), not \\( E = mc^3 \\). Therefore, the statement is false.", "tokens": {"prompt_tokens": 75, "completion_tokens": 34, "total_tokens": 109, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 75}}

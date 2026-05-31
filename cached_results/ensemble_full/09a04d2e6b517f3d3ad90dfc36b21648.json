@@ -1,0 +1,1 @@
+{"success": true, "answer": "Given that \\(\\omega^{1997} = 1\\) and \\(\\omega \\neq 1\\), \\(\\omega\\) is a primitive 1997th root of unity. The sum simplifies by pairing terms symmetrically around the middle, yielding:\n\n\\[\n\\boxed{0}\n\\]", "tokens": {"prompt_tokens": 138, "total_tokens": 201, "completion_tokens": 63, "prompt_tokens_details": {"cached_tokens": 0}}}

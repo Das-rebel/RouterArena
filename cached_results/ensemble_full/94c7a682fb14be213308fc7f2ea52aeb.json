@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is **B**.\n\nSince the coin is fair, the probability of heads (X = 1) and tails (X = 0) are both equal, each with a probability of \\( \\frac{1}{2} \\).\n\n\\boxed{B}", "tokens": {"prompt_tokens": 335, "total_tokens": 391, "completion_tokens": 56, "prompt_tokens_details": {"cached_tokens": 0}}}

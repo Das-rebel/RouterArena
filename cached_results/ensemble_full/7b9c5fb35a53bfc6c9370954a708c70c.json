@@ -1,0 +1,1 @@
+{"success": true, "answer": "The function \\( f(x, y) = \\frac{x^2 - y^2}{x^2 + y^2} \\) is **not continuous at the origin** because it is undefined there (denominator becomes zero).\n\n\\boxed{H}", "tokens": {"prompt_tokens": 205, "total_tokens": 260, "completion_tokens": 55, "prompt_tokens_details": {"cached_tokens": 0}}}

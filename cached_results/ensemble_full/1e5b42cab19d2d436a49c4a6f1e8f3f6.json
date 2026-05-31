@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is derived from the **1/7-power law** boundary layer theory, where the boundary layer thickness scales as \\(\\delta \\propto x \\cdot (Re_x)^{-1/5}\\).\n\nThe correct choice is:\n\\boxed{D}", "tokens": {"prompt_tokens": 457, "total_tokens": 509, "completion_tokens": 52, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "A standard die has six faces, each equally likely. Only one face shows a \"six\". Therefore, the probability is 1 out of 6.\n\n\\boxed{C}", "tokens": {"prompt_tokens": 140, "completion_tokens": 36, "total_tokens": 176, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 12}}
