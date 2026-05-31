@@ -54,6 +54,8 @@ universal_names = [
     "deepseek-coder",
     "deepseek/deepseek-v4-flash",
     "deepseek-v3.1",
+    "openai_gpt-oss-120b",
+    "openai/gpt-oss-120b",
     "deepseek-v3.2",
     # Together AI models
     "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
