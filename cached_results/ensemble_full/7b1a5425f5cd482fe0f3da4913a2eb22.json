@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nIn *Racko*, you can only pick up the **top card** from the discard pile, not any card. The rule is similar to *Uno* or *Rummy*, where only the top discard is accessible. The statement \"ANY card\" is incorrect.", "tokens": {"prompt_tokens": 90, "total_tokens": 151, "completion_tokens": 61, "prompt_tokens_details": {"cached_tokens": 0}}}

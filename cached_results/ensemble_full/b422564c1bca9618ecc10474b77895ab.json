@@ -1,0 +1,1 @@
+{"success": true, "answer": "The game ends with Black having a decisive material advantage and White unable to prevent checkmate, so Black wins.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 1284, "completion_tokens": 28, "total_tokens": 1312, "prompt_tokens_details": {"cached_tokens": 1280}, "prompt_cache_hit_tokens": 1280, "prompt_cache_miss_tokens": 4}}

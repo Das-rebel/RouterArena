@@ -1,0 +1,1 @@
+{"success": true, "answer": "The mean QRS axis of 90 degrees points directly toward lead aVF. Therefore, the R wave voltage will be maximally positive in aVF.  \n\n\\boxed{C}", "tokens": {"prompt_tokens": 105, "completion_tokens": 37, "total_tokens": 142, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 105}}

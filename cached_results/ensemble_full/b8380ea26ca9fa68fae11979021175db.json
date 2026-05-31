@@ -1,0 +1,1 @@
+{"success": true, "answer": "The game ends with Black delivering checkmate, as the final moves show Black's queen and pawns overwhelming White's defenses.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 2492, "completion_tokens": 31, "total_tokens": 2523, "prompt_tokens_details": {"cached_tokens": 2432}, "prompt_cache_hit_tokens": 2432, "prompt_cache_miss_tokens": 60}}

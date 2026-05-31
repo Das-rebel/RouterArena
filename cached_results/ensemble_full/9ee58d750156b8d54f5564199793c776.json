@@ -1,0 +1,1 @@
+{"success": true, "answer": "The game ends with Black promoting a pawn to a queen on b1, giving Black a decisive material advantage with checkmate imminent.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 1801, "completion_tokens": 32, "total_tokens": 1833, "prompt_tokens_details": {"cached_tokens": 1792}, "prompt_cache_hit_tokens": 1792, "prompt_cache_miss_tokens": 9}}

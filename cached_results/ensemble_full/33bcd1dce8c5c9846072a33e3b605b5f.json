@@ -1,0 +1,1 @@
+{"success": true, "answer": "The final move in this drawn game (1/2-1/2) is **a2a3**, a standard pawn move to prevent the opponent from playing ...a2-a1=Queen (a common draw technique in endgames).\n\n\\boxed{a2a3}", "tokens": {"prompt_tokens": 1126, "total_tokens": 1184, "completion_tokens": 58, "prompt_tokens_details": {"cached_tokens": 64}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nThe Queen moves like a **Rook** (any number of squares horizontally or vertically) and like a **Bishop** (any number of squares diagonally). This combination gives it the most powerful movement in chess.", "tokens": {"prompt_tokens": 103, "total_tokens": 153, "completion_tokens": 50, "prompt_tokens_details": {"cached_tokens": 0}}}

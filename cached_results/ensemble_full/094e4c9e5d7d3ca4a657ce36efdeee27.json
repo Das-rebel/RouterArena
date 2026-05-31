@@ -1,0 +1,1 @@
+{"success": true, "answer": "The most appropriate average for this data is the **median** because the dataset contains an extreme outlier (5000), which would skew the arithmetic mean.\n\n\\boxed{C}", "tokens": {"prompt_tokens": 184, "total_tokens": 223, "completion_tokens": 39, "prompt_tokens_details": {"cached_tokens": 0}}}

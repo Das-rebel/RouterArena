@@ -1,0 +1,1 @@
+{"success": true, "answer": "The dose is calculated as 62 kg \u00d7 15 mg/kg = 930 mg. Since 1 g = 1000 mg, 930 mg equals 0.93 g. Therefore, the correct answer is B.\n\n\\boxed{B}", "tokens": {"prompt_tokens": 162, "completion_tokens": 51, "total_tokens": 213, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 34}}

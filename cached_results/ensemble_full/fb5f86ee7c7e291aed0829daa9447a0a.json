@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is \\(\\boxed{A}\\).\n\n**Explanation:**\nThe daily dose is \\(960 \\text{ mg} \\times 2 = 1920 \\text{ mg}\\), which converts to \\(1.92 \\text{ g}\\). Option A matches this value.", "tokens": {"prompt_tokens": 173, "total_tokens": 234, "completion_tokens": 61, "prompt_tokens_details": {"cached_tokens": 0}}}

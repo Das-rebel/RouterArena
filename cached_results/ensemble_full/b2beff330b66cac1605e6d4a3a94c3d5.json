@@ -1,0 +1,1 @@
+{"success": true, "answer": "The game ends with Black delivering checkmate after promoting a pawn to a queen, so Black wins.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 997, "completion_tokens": 26, "total_tokens": 1023, "prompt_tokens_details": {"cached_tokens": 896}, "prompt_cache_hit_tokens": 896, "prompt_cache_miss_tokens": 101}}

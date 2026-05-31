@@ -1,0 +1,1 @@
+{"success": true, "answer": "The game ends in a draw due to threefold repetition, as the same position occurs repeatedly with the moves ...b1b2, a7a2, b2b1, a7a2, etc.  \n\n\\boxed{C}", "tokens": {"prompt_tokens": 732, "completion_tokens": 50, "total_tokens": 782, "prompt_tokens_details": {"cached_tokens": 640}, "prompt_cache_hit_tokens": 640, "prompt_cache_miss_tokens": 92}}

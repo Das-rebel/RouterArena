@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{A}\n\nThe game ends with Black's queen checkmated on **h8** (after **g8h8** and **h6h5**), leaving no legal moves. White's last move (**e5f5**) delivers the decisive checkmate. Thus, **White Wins**.", "tokens": {"prompt_tokens": 829, "total_tokens": 892, "completion_tokens": 63, "prompt_tokens_details": {"cached_tokens": 0}}}

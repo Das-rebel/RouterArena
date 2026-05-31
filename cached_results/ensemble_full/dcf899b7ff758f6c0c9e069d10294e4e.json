@@ -1,0 +1,1 @@
+{"success": true, "answer": "The final move in this drawn game is **a1b2**, a standard king move to maintain the stalemate or perpetual check pattern.\n\n\\boxed{a1b2}", "tokens": {"prompt_tokens": 2188, "total_tokens": 2225, "completion_tokens": 37, "prompt_tokens_details": {"cached_tokens": 64}}}
