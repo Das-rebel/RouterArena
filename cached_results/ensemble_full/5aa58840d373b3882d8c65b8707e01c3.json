@@ -1,0 +1,1 @@
+{"success": true, "answer": "The University of East Anglia is located in Norwich, which is in the county of Norfolk. Therefore, the correct answer is Norfolk. \n\n\\boxed{A}", "tokens": {"prompt_tokens": 93, "completion_tokens": 33, "total_tokens": 126, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 93}}

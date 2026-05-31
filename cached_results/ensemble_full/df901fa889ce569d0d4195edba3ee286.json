@@ -1,0 +1,1 @@
+{"success": true, "answer": "The largest city in Australia is Sydney. It has the highest population among Australian cities. Therefore, the correct answer is \\boxed{Sydney}.", "tokens": {"prompt_tokens": 63, "completion_tokens": 29, "total_tokens": 92, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 63}}

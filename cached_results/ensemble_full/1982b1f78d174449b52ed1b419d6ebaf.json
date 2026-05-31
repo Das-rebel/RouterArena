@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{\\text{Charley shot holes in the roof, which let in sunlight that killed many of Jerry's vampire victims.}}", "tokens": {"prompt_tokens": 888, "completion_tokens": 28, "total_tokens": 916, "prompt_tokens_details": {"cached_tokens": 768}, "prompt_cache_hit_tokens": 768, "prompt_cache_miss_tokens": 120}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}  \nThe capital of Connecticut is Hartford, not New Haven. New Haven is a major city in the state but not the capital. Therefore, the statement is false.", "tokens": {"prompt_tokens": 86, "completion_tokens": 38, "total_tokens": 124, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 86}}

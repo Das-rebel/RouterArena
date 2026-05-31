@@ -1,0 +1,1 @@
+{"success": true, "answer": "The man is Tom Wolfe. He wrote the article \"Mau-Mauing the Flak Catchers\" about the Office of Economic Opportunity in San Francisco.  \n\n\\boxed{Tom Wolfe}", "tokens": {"prompt_tokens": 92, "completion_tokens": 40, "total_tokens": 132, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 92}}

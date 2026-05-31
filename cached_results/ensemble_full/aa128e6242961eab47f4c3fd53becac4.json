@@ -1,0 +1,1 @@
+{"success": true, "answer": "The artist is Vincent van Gogh. He wrote this in a letter to Anthon van Rappard in 1885, defending his artistic process.  \n\n\\boxed{Vincent van Gogh}", "tokens": {"prompt_tokens": 98, "completion_tokens": 39, "total_tokens": 137, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 98}}

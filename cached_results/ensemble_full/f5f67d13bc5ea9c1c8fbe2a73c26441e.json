@@ -1,0 +1,1 @@
+{"success": true, "answer": "The capital of France is Paris. It is one of the most well-known cities in the world.  \n\n\\boxed{Paris}", "tokens": {"prompt_tokens": 62, "completion_tokens": 27, "total_tokens": 89, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 62}}

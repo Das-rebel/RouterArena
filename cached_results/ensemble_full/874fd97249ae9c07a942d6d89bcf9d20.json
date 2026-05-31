@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is A. False. Each piece in Tetris is called a tetromino, not a \"tetris.\" The word \"Tetris\" refers to the game itself.", "tokens": {"prompt_tokens": 81, "completion_tokens": 38, "total_tokens": 119, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 81}}

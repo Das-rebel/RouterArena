@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}  \n\nIn CS:GO, service medals are awarded at account levels that are multiples of 40, starting at level 40. Therefore, the correct answer is level 40.", "tokens": {"prompt_tokens": 99, "completion_tokens": 41, "total_tokens": 140, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 99}}

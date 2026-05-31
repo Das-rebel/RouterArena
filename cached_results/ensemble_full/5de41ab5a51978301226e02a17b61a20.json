@@ -1,0 +1,1 @@
+{"success": true, "answer": "The network wants to cancel Abby's show because of its poor ratings. This leads the station owner to hire Mike Chadway to boost viewership.", "tokens": {"prompt_tokens": 669, "completion_tokens": 29, "total_tokens": 698, "prompt_tokens_details": {"cached_tokens": 640}, "prompt_cache_hit_tokens": 640, "prompt_cache_miss_tokens": 29}}
