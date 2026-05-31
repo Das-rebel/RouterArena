@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nA nickel is worth 5 cents, so dividing \\$5 (500 cents) by 5 cents per nickel gives **100 nickels**. The correct answer is **B**, as the other options are incorrect calculations.", "tokens": {"prompt_tokens": 97, "total_tokens": 150, "completion_tokens": 53, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "To find the mean weight, add all the weights and divide by the number of rats:\n\n\\[\n\\text{Mean} = \\frac{2 + 3 + 6 + 8 + 9}{5} = \\frac{28}{5} = 5.6 \\text{ lbs}\n\\]\n\nThe correct answer is \\(\\boxed{F}\\).", "tokens": {"prompt_tokens": 171, "total_tokens": 245, "completion_tokens": 74, "prompt_tokens_details": {"cached_tokens": 0}}}

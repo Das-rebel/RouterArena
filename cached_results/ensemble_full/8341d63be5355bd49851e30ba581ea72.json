@@ -1,0 +1,1 @@
+{"success": true, "answer": "The truth table shows that the two propositions have opposite truth values in every row, meaning they are contradictory.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 170, "completion_tokens": 27, "total_tokens": 197, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 42}}

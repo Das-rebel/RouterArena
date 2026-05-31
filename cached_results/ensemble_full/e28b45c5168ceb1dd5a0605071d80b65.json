@@ -1,0 +1,1 @@
+{"success": true, "answer": "The truth table shows that ~O \u2283 P and O \u2228 P have the same truth values in all rows, so they are logically equivalent.  \n\n\\boxed{A}", "tokens": {"prompt_tokens": 147, "completion_tokens": 35, "total_tokens": 182, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 19}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The best translation is **\\boxed{C}**.\n\nHere, \"Sheena\" is a constant (lowercase *s*), and \"punk rocker\" is a predicate *P*. The correct form is *P(s)*, written as *sP* in the given options.", "tokens": {"prompt_tokens": 129, "total_tokens": 187, "completion_tokens": 58, "prompt_tokens_details": {"cached_tokens": 0}}}

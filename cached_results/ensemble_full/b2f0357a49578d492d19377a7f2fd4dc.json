@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}\n\nDHCP stands for **Dynamic Host Configuration Protocol**, not \"Port.\" The correct term refers to a network management protocol, not a port designation. The acronym is widely recognized in networking contexts.", "tokens": {"prompt_tokens": 80, "total_tokens": 125, "completion_tokens": 45, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{D}  \n\nHTTP typically runs on port 80, while HTTPS uses port 443. Port 23 is for Telnet, and port 53 is for DNS. Therefore, the correct answer is D.", "tokens": {"prompt_tokens": 89, "completion_tokens": 45, "total_tokens": 134, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 89}}

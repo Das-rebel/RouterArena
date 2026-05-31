@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{B}  \nJava is both a programming language and the name of a major island in Indonesia. The other options do not correspond to Indonesian islands.", "tokens": {"prompt_tokens": 90, "completion_tokens": 32, "total_tokens": 122, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 90}}

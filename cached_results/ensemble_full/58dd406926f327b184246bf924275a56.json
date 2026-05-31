@@ -1,0 +1,1 @@
+{"success": true, "answer": "An IPv6 address is 128 bits long.  \nThe correct answer is B.  \n\\boxed{B}", "tokens": {"prompt_tokens": 94, "completion_tokens": 23, "total_tokens": 117, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 94}}

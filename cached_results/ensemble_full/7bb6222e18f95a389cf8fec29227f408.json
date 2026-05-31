@@ -1,0 +1,1 @@
+{"success": true, "answer": "Here's the Python function body that solves the problem:\n\n```python\ndef max_achievable(num, t):\n    return num + 2 * t\n```", "tokens": {"prompt_tokens": 323, "total_tokens": 358, "completion_tokens": 35, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The text states that monopoles typically have heights ranging from 50 to 200 feet. Therefore, the range is 50 to 200 feet.\n\n\\boxed{50 \\text{ to } 200}", "tokens": {"prompt_tokens": 638, "completion_tokens": 43, "total_tokens": 681, "prompt_tokens_details": {"cached_tokens": 512}, "prompt_cache_hit_tokens": 512, "prompt_cache_miss_tokens": 126}}

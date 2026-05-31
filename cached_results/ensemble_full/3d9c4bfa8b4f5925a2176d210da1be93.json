@@ -1,0 +1,1 @@
+{"success": true, "answer": "The note was signed on March 15 with a term of two months, so the maturity date is two months later, which is May 15.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 154, "completion_tokens": 36, "total_tokens": 190, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 26}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The containerboard sales volume decreased from **477,000 tons** in 2002 to **445,000 tons** in 2003.\n\nThe difference is calculated as:\n**477,000 tons - 445,000 tons = 32,000 tons**.\n\n\\boxed{32000}", "tokens": {"prompt_tokens": 1094, "total_tokens": 1181, "completion_tokens": 87, "prompt_tokens_details": {"cached_tokens": 0}}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "def number_of_employees_who_met_target(hours, target):\n    count = 0\n    for h in hours:\n        if h >= target:\n            count += 1\n    return count", "tokens": {"prompt_tokens": 322, "completion_tokens": 42, "total_tokens": 364, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 66}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "The numbers in order are 3, 5, 8, 9, 12. The median is the middle number, which is 8.  \n\n\\boxed{B}", "tokens": {"prompt_tokens": 136, "completion_tokens": 38, "total_tokens": 174, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 8}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{D}\n\nHTTP (Hypertext Transfer Protocol) uses **port 80** by default for communication. Port 443 is for HTTPS (secure HTTP), while 23 is for Telnet and 53 is for DNS. This is a standard networking convention.", "tokens": {"prompt_tokens": 95, "total_tokens": 155, "completion_tokens": 60, "prompt_tokens_details": {"cached_tokens": 0}}}

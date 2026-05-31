@@ -1,0 +1,1 @@
+{"success": true, "answer": "The maximum number of edges in a simple planar graph with \\( n \\) vertices is given by \\( 3n - 6 \\).\n\nFor \\( n = 30 \\), this yields \\( 3 \\times 30 - 6 = 84 \\).\n\nThe correct answer is \\(\\boxed{B}\\).", "tokens": {"prompt_tokens": 146, "total_tokens": 212, "completion_tokens": 66, "prompt_tokens_details": {"cached_tokens": 0}}}
