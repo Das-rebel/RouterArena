@@ -1,3 +1,7 @@
+# Copyright 2024-present RouteWorks, Inc.
+# Licensed under the Apache License, Version 2.0
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 from router_inference.router.base_router import BaseRouter
 import hashlib
