@@ -1,0 +1,1 @@
+{"success": true, "answer": "\\boxed{A}\n\nFTP (File Transfer Protocol) uses **port 21** for control commands and **port 20** for data transfer, making option A the correct choice. Port 53 is used by DNS, not FTP.", "tokens": {"prompt_tokens": 102, "total_tokens": 155, "completion_tokens": 53, "prompt_tokens_details": {"cached_tokens": 0}}}

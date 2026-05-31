@@ -1,0 +1,1 @@
+{"success": true, "answer": "```python\ndef sum_of_digits_if_harshad(x: int) -> int:\n    digit_sum = sum(int(d) for d in str(x))\n    return digit_sum if x % digit_sum == 0 else -1\n```", "tokens": {"prompt_tokens": 194, "completion_tokens": 50, "total_tokens": 244, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 66}}

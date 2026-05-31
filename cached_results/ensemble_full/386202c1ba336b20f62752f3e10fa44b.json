@@ -1,0 +1,1 @@
+{"success": true, "answer": "The UDP header has four fields: source port, destination port, length, and checksum. Therefore, the correct answer is B. 4.\n\n\\boxed{B}", "tokens": {"prompt_tokens": 92, "completion_tokens": 35, "total_tokens": 127, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 92}}

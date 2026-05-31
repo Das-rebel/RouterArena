@@ -1,0 +1,1 @@
+{"success": true, "answer": "The postings list should be sorted by DocID to efficiently retrieve documents containing a specific term. This allows for quick lookup and retrieval of relevant documents in an inverted index. The correct answer is \\boxed{B}.", "tokens": {"prompt_tokens": 118, "total_tokens": 161, "completion_tokens": 43, "prompt_tokens_details": null}}

@@ -1,0 +1,1 @@
+{"success": true, "answer": "Here's the Python function body that implements the described logic:\n\n```python\ndef is_harshad_number(x):\n    sum_digits = sum(int(digit) for digit in str(x))\n    return sum_digits if x % sum_digits == 0 else -1\n```", "tokens": {"prompt_tokens": 205, "total_tokens": 264, "completion_tokens": 59, "prompt_tokens_details": {"cached_tokens": 0}}}

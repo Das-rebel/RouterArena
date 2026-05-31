@@ -1,0 +1,1 @@
+{"success": true, "answer": "Here's the Python function for your prompt:  \n\n```python\ndef remove_trailing_zeros(num: str) -> str:\n    return num.rstrip('0')\n```", "tokens": {"prompt_tokens": 153, "completion_tokens": 36, "total_tokens": 189, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 25}}

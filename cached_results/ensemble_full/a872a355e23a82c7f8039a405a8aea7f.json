@@ -1,0 +1,1 @@
+{"success": true, "answer": "The correct answer is cosine similarity, as it directly measures the cosine of the angle between two vectors to determine how similar they are.  \n\n\\boxed{A}", "tokens": {"prompt_tokens": 102, "completion_tokens": 32, "total_tokens": 134, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 102}}
