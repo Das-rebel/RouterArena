@@ -48,7 +48,26 @@ class A3MRouter(BaseRouter):
         'write tests', 'documentation',
     ]
     
-    # Jargon indicators (professional terminology) +15%
+    
+    # Cheap tier exclusion - if query has these, don't route to cheap (route to mid/premium)
+    CHEAP_EXCLUSION_SIGNALS = [
+        # System design
+        'architecture', 'microservices', 'load balancing', 'rate limiting', 'caching',
+        # Security
+        'authentication', 'authorization', 'encryption', 'privacy', 'gdpr', 'hipaa',
+        # Data processing
+        'etl', 'data pipeline', 'stream processing', 'real-time',
+        # Implementation depth
+        'implement', 'deployment', 'infrastructure', 'configuration',
+    ]
+
+    # Premium tier signals
+    PREMIUM_EXPLICIT = [
+        'prove that', 'derive', 'synthesize', 'theoretical',
+        'architect system', 'design from scratch', 'complex reasoning',
+        'machine learning model', 'neural network', 'transformer',
+    ]
+# Jargon indicators (professional terminology) +15%
     JARGON_PATTERNS = [
         r'\b(protocol|methodology|framework|paradigm|synergy)\b',
         r'\b(optimization|efficiency|scalability|robustness)\b',
@@ -162,6 +181,19 @@ class A3MRouter(BaseRouter):
             complexity += 0.04
         
         # Cap at 1.0
+        # CHEAP EXCLUSION: If query has multiple technical terms, push complexity up
+        query_lower = query.lower()
+        cheap_exclusion_count = sum(1 for sig in self.CHEAP_EXCLUSION_SIGNALS if sig in query_lower)
+        if cheap_exclusion_count >= 2:
+            complexity += 0.15
+        elif cheap_exclusion_count == 1 and len(query.split()) > 50:
+            complexity += 0.08
+
+        # PREMIUM EXPLICIT: If query explicitly mentions premium-tier tasks
+        premium_explicit_count = sum(1 for sig in self.PREMIUM_EXPLICIT if sig in query_lower)
+        if premium_explicit_count > 0:
+            complexity += 0.12
+
         return min(complexity, 1.0)
     
     def _thompson_sample(self, tier: str) -> bool:
@@ -187,20 +219,12 @@ class A3MRouter(BaseRouter):
         complexity = self._calculate_complexity(query)
         
         # Tier boundaries
-        if complexity < 0.25:
-            return 'deepseek-chat'  # Free tier - best cost
-        elif complexity < 0.55:
-            # Borderline: mid tier
-            if 0.30 <= complexity <= 0.70:
-                # Use Thompson Sampling for borderline cases
-                if self._thompson_sample('mid'):
-                    return 'mistralai/ministral-3-14b-2512'
-            return 'mistralai/ministral-3-14b-2512'
+        if complexity < 0.15:
+            return 'deepseek-chat'  # Free tier - only very simple
+        elif complexity < 0.40:
+            return 'mistralai/ministral-3-14b-2512'  # Mid tier - most queries
         else:
-            # Borderline: premium tier
-            if 0.30 <= complexity <= 0.70:
-                if self._thompson_sample('premium'):
-                    return 'gemini-2.0-flash-001'
+            return 'gemini-2.0-flash-001'  # Premium tier
             return 'gemini-2.0-flash-001'
     
     # Category-based routing for benchmark queries (from our analysis)
