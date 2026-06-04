@@ -249,26 +249,3 @@ class A3MRouter(BaseRouter):
         'Ethics': 'deepseek-chat',
         'GeoBench': 'mistralai/ministral-3-14b-2512',
     }
-EOF
-
-echo "=== a3m_router.py updated ==="
-
-echo ""
-echo "=== Commit changes to PR branch ==="
-cd /tmp/routerarena
-git add router_inference/router/a3m_router.py
-git commit -m "feat: Update A3M Router to v2.14.26 with research signals
-
-- Jargon Density (+15%) for professional terminology
-- Task Formality (+10%) for protocol/audit/brief
-- Depth Markers (+8%) for comprehensive/expert-level
-- Stakes Language (+5%) for critical/liability/regulatory
-- Multi-Step Structure (+5%) for sequential reasoning
-- Thompson Sampling for borderline cases
-- Free tier fix for simple queries
-
-Improvements over v3:
-- 67% exact tier (vs ~55% before)
-- 96% ±1 tier accuracy
-- Better mid-tier routing
-- Lower over-routing rate" 2>&1
