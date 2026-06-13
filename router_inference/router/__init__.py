@@ -9,3 +9,6 @@ from router_inference.router.vllm_sr import VLLMSR
 from router_inference.router.auto_router import auto_router
 
 __all__ = ["BaseRouter", "ExampleRouter", "VLLMSR", "auto_router"]
+
+from router_inference.router.a3m_router import A3MRouter
+__all__ = ['BaseRouter', 'A3MRouter', 'ExampleRouter', 'VLLMSR', 'auto_router']

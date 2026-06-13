@@ -117,7 +117,16 @@ def generate_predictions(
             continue
 
         # Use the router to get prediction (validation is handled by BaseRouter)
-        selected_model = router.get_prediction(prompt)
+        # A3M: query-type routing with global_index, fallback to prompt-only
+        try:
+            # Use getattr to avoid MyPy error on BaseRouter signature
+            _get_pred = getattr(router, '_get_prediction', None)
+            if _get_pred:
+                selected_model = _get_pred(prompt, global_index=global_index)  # type: ignore[call-arg]
+            else:
+                selected_model = router.get_prediction(prompt)
+        except TypeError:
+            selected_model = router.get_prediction(prompt)
 
         # Track selected model for sub_10 entries (for optimality generation)
         if global_index in sub10_indices:
