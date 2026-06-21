@@ -3,11 +3,10 @@
         "router_name": "a3m-router-mcts",
         "router_cls_name": "A3MRouter",
         "models": [
-            "openai/gpt-oss-120b",
-            "google/gemma-4-31b-it",
-            "nvidia/nemotron-3-120b-a12b",
-            "meta-llama/llama-3.3-70b-instruct",
-            "openai/gpt-oss-20b"
+            "openai_gpt-oss-120b",
+            "openai_gpt-oss-20b",
+            "google_gemma-4-31b-it",
+            "meta-llama_llama-3.3-70b-instruct"
         ]
     }
 }

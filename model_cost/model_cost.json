@@ -140,8 +140,8 @@
     "output_token_price_per_million": 0.22
   },
   "meta-llama_llama-3.3-70b-instruct": {
-    "input_token_price_per_million": 0.1,
-    "output_token_price_per_million": 0.32
+    "input_token_price_per_million": 0.05,
+    "output_token_price_per_million": 0.25
   },
   "meta-llama_llama-3.1-405b-instruct": {
     "input_token_price_per_million": 3.5,
@@ -326,5 +326,13 @@
   "gpt-5.4": {
     "input_token_price_per_million": 2.5,
     "output_token_price_per_million": 15.0
+  },
+  "openai_gpt-oss-20b": {
+    "input_token_price_per_million": 0.05,
+    "output_token_price_per_million": 0.2
+  },
+  "google_gemma-4-31b-it": {
+    "input_token_price_per_million": 0.05,
+    "output_token_price_per_million": 0.25
   }
 }

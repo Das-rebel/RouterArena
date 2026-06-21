@@ -120,6 +120,11 @@ universal_names = [
     "gemini-2.5-flash-lite",
     "qwen3-235b-a22b-instruct-2507",
     "qwen3-30b-a3b-instruct-2507",
+    # A3M Router additions (free-tier models)
+    "openai_gpt-oss-120b",
+    "openai_gpt-oss-20b",
+    "google_gemma-4-31b-it",
+    "meta-llama_llama-3.3-70b-instruct",
 ]
 
 
