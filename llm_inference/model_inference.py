@@ -180,7 +180,13 @@ class ModelInference:
             "mistralai/devstral-2512:free": "openrouter",
             "meta-llama/llama-3.3-70b-instruct": "openrouter",
             "meta-llama/llama-3.1-405b-instruct": "openrouter",
-            # Replicate
+
+            "openai/gpt-oss-20b:free": "openrouter",
+            "google/gemma-4-31b-it:free": "openrouter",
+            "google/gemma-4-26b-a4b-it:free": "openrouter",
+            "nvidia/nemotron-3.5-lightning:free": "openrouter",
+            "nvidia/nemotron-3-nano-30b-a3b:free": "openrouter",
+            "nvidia/nemotron-nano-9b-v2:free": "openrouter",            # Replicate
             "meta/codellama-34b-instruct": "replicate",
             # AWS Bedrock
             "llama-3-1-8b-instruct": "aws",
